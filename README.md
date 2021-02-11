@@ -18,10 +18,10 @@ AMBASSADOR_SERVICE_IP=$(kubectl get service -n ambassador ambassador -o jsonpath
 echo $AMBASSADOR_SERVICE_IP
 ```
 
-Now install the EdgyCorp Web App into your cluster:
+Now install the EdgeyCorp Web App into your cluster:
 
 ```
-kubectl apply -f edgy-corp-web-app.yaml 
+kubectl apply -f edgey-corp-web-app.yaml 
 ```
 
 You can verify the Services and Pods have been installed correctly using the following commands:
@@ -44,7 +44,7 @@ verylargejavaservice-7dfddbc95c-j2twh        1/1     Running   0          36s
 
 Next, access AMBASSADOR_SERVICE_IP in your browser, and note the title color and the architecture of the application you have just deployed that is shown in the image.
 
-![alt text](app-architecture-screenshot.jpg "EdgyCorp Web App Architecture")
+![alt text](app-architecture-screenshot.jpg "EdgeyCorp Web App Architecture")
 
 
 ## Setup your local Node development environment
