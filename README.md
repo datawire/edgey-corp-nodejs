@@ -1,4 +1,4 @@
-# amb-code-quickstart-app
+# edgey-corp-nodejs
 The Ambassador Telepresence Quickstart App assumes that you have already installed Ambassador Telepresence locally, and also that you have access to an empty Kubernetes cluster and kubectl access to this cluster.
 
 First, install the AES Kubernetes Ingress. If you want more configuration options for installing an Ingress (including cloud-specific load balancer config) please visit the [K8s Initializer](https://app.getambassador.io/initializer/)
@@ -57,10 +57,11 @@ If you don't already have Node installed on your local machine, instructions can
 cd ../DataProcessingNodeService
 
 npm install
+npm start
 
-# This application will run on port 3000 by default and the -c param specifies the color variable that the VeryLargeJavaService calls via the `/color` API endpoint.
+# This application will run on port 3000 by default with the color variable set in the code as blue that the VeryLargeJavaService calls via the `/color` API endpoint.
 
-node app -c blue
+
 ```
 
 ## Configuring Telepresence 
