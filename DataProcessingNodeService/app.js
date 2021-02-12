@@ -63,7 +63,7 @@ app.get("/recordCount", (req, res, next) => {
     })
  });
 
-// findMerch (find EdgyCorp merchandise matching search params via datastore service)
+// findMerch (find EdgeyCorp merchandise matching search params via datastore service)
 app.get("/findMerch", (req, res, next) => {
   console.log("findMerch endpoint entry");
 
