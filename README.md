@@ -162,13 +162,13 @@ Preview URL: https://recursing-benz-1011.preview-beta.edgestack.me
 
 Once they have authenticated via Ambassador they will be able to see the results of your dataprocessingnodeservice interception i.e. they can see the results of any local changes you make. The authentication step ensures that only people from the same organization can access your preview links.
 
-Get your friend to tell you when they can see the EdgyCorp WebApp home page. Tell them to look at the application architecture diagram and note that you are running the DataProcessingNodeService locally and all the other services are running in a remote cluster.
+Get your friend to tell you when they can see the EdgeyCorp WebApp home page. Tell them to look at the application architecture diagram and note that you are running the DataProcessingNodeService locally and all the other services are running in a remote cluster.
 
 Now get your friend to click on the link at the bottom of the page "Join a friend for some collaborative bug hunting!"
 
-On the "EdgyCorp: Merchandise Search" page that display in their browser, have your friend select options in the radio boxes and click "Submit". Search results should be displayed in the table below the search.
+On the "EdgeyCorp: Merchandise Search" page that display in their browser, have your friend select options in the radio boxes and click "Submit". Search results should be displayed in the table below the search.
 
-![alt text](edgycorp-merch-search.jpg "EdgyCorp Merch Search")
+![alt text](edgeycorp-merch-search.jpg "EdgeyCorp Merch Search")
 
 As your friend is searching note that you can see the logging statements in your console or debug output.
 
