@@ -44,7 +44,7 @@ public class VeryLargeJavaWebPageTest {
 
         wireMockServer.stubFor(get(urlEqualTo("/color")).willReturn(aResponse().withBody("blue")));
         wireMockServer.stubFor(get(urlEqualTo("/environment")).willReturn(aResponse().withBody("test")));
-        wireMockServer.stubFor(get(urlEqualTo("/recordCount")).willReturn(aResponse().withBody("0")));
+        wireMockServer.stubFor(get(urlEqualTo("/recordCount")).willReturn(aResponse().withBody("9999")));
 
         //Act -- make request with Telepresence injected headers
         HttpHeaders headers = new HttpHeaders();
