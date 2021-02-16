@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: dataprocessingservice
-        image: docker.io/danielbryantuk/dataprocessingservice
+        image: docker.io/danielbryantuk/dataprocessingnodeservice
         ports:
         - containerPort: 3000
 
