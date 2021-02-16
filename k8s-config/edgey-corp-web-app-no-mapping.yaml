@@ -2,20 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dataprocessingnodeservice
+  name: dataprocessingservice
 spec:
   selector:
     matchLabels:
-      run: dataprocessingnodeservice
+      run: dataprocessingservice
   replicas: 1
   template:
     metadata:
       labels:
-        run: dataprocessingnodeservice
+        run: dataprocessingservice
     spec:
       containers:
-      - name: dataprocessingnodeservice
-        image: docker.io/danielbryantuk/dataprocessingnodeservice
+      - name: dataprocessingservice
+        image: docker.io/danielbryantuk/dataprocessingservice
         ports:
         - containerPort: 3000
 
@@ -23,15 +23,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: dataprocessingnodeservice
+  name: dataprocessingservice
   labels:
-    run: dataprocessingnodeservice
+    run: dataprocessingservice
 spec:
   ports:
   - port: 3000
     protocol: TCP
   selector:
-    run: dataprocessingnodeservice
+    run: dataprocessingservice
 
 
 ---
@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
       - name: verylargejavaservice
-        image: docker.io/danielbryantuk/verylargejavaservice
+        image: docker.io/peteroneilljr/verylargejavaservice
         ports:
         - containerPort: 8080
 
