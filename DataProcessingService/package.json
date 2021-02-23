@@ -1,5 +1,5 @@
 {
-  "name": "dataprocessingnodeservice",
+  "name": "dataprocessingservice",
   "version": "0.0.1",
   "description": "Ambassador Telepresence DataProcessingNodeService",
   "main": "app.js",
