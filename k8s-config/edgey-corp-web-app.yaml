@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dataprocessingnodeservice
+  name: dataprocessingservice
 spec:
   selector:
     matchLabels:
-      run: dataprocessingnodeservice
+      run: dataprocessingservice
   replicas: 1
   template:
     metadata:
       labels:
-        run: dataprocessingnodeservice
+        run: dataprocessingservice
     spec:
       containers:
-      - name: dataprocessingnodeservice
+      - name: dataprocessingservice
         image: docker.io/datawire/dataprocessingservice:nodejs
         ports:
         - containerPort: 3000
@@ -23,15 +23,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: dataprocessingnodeservice
+  name: dataprocessingservice
   labels:
-    run: dataprocessingnodeservice
+    run: dataprocessingservice
 spec:
   ports:
   - port: 3000
     protocol: TCP
   selector:
-    run: dataprocessingnodeservice
+    run: dataprocessingservice
 
 
 ---
