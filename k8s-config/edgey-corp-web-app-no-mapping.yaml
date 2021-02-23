@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: dataprocessingservice
-        image: docker.io/danielbryantuk/dataprocessingnodeservice
+        image: docker.io/datawire/dataprocessingservice:nodejs
         ports:
         - containerPort: 3000
 
@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
       - name: verylargejavaservice
-        image: docker.io/peteroneilljr/verylargejavaservice
+        image: docker.io/datawire/verylargejavaservice
         ports:
         - containerPort: 8080
 
@@ -86,7 +86,7 @@ spec:
     spec:
       containers:
       - name: verylargejavaservice
-        image: docker.io/danielbryantuk/verylargedatastore
+        image: docker.io/datawire/verylargedatastore
         ports:
         - containerPort: 8080
 
