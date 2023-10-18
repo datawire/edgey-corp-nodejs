@@ -7,4 +7,5 @@ RUN npm install
 COPY . .
 EXPOSE 3000
 
-CMD [ "node", "app", "-c", "green" ]
+ENTRYPOINT [ "node", "app" ]
+CMD [ "-c", "green" ]
